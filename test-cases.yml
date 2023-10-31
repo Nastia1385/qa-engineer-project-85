@@ -1,0 +1,142 @@
+---
+- summary: |
+    Успешная регистрация нового пользователя
+  requirement: |
+    Должна быть форма регистрации и авторизации пользователей
+  prerequisites: |
+    Осуществлен вход на сайт https://codebattle.hexlet.io/
+  test-data: |
+    Nickname = Nata2023
+    Email = NatashaSOL@gmail.com
+    Password = Cjkywt2020@
+    Password Confirmation = Cjkywt2020@
+  steps:
+    - Вводим Nickname
+    - Вводим Email
+    - Вводим Password
+    - Вводим Password Confirmation
+    - Нажать кнопку Submit
+  expected-result: |
+    Пользователь должен попасть на главную страницу
+
+
+
+
+- summary: |
+    Успешный вход пользователя через GitHub
+  requirement: |
+    Должна быть форма регистрации и авторизации пользователей
+  prerequisites:
+    Осуществлен вход на сайт https://codebattle.hexlet.io/
+  test-data: |
+    нет данных
+  steps:
+    - Нажать кнопку Sign in
+    - Нажать кнопку Sign with GitHub
+    - Нажимаем кнопку «Войти»
+  expected-result: |
+    Пользователь должен попасть на главную страницу
+
+
+ 
+
+ - summary: |
+    Неуспешная регистрация пользователя с некорректным Email
+  requirement: |
+    Должна быть форма регистрации и авторизации пользователей
+  prerequisites: |
+    Осуществлен вход на сайт https://codebattle.hexlet.io/
+  test-data: |
+    Nickname = KotikBOT
+    Email = BOTKOTgmail.com
+    Password = Cbhtym@19
+    Password Confirmation = Cbhtym@19
+  steps:
+    - Вводим Nickname
+    - Вводим Email
+    - Вводим Password
+    - Вводим Password Confirmation
+    - Нажать кнопку Submit
+  expected-result: |
+    Пользователь должен увидеть сообщение, что Email некорректный
+
+
+
+
+- summary: |
+    Пользователь может создать игру с ботом
+  requirement: |
+    Пользователь может сам создать игру, в которую можно играть с любым человеком, с ботом или другом (игра будет доступна по ссылке).
+  prerequisites:
+    Открыта главная страница Codebattle
+  test-data: |
+    Игрок 1 = Nata2023
+    Игрок 2 = бот
+  steps:
+    - Нажать кнопку CREATE A GAME
+    - Нажать кнопку With a bot
+    - Выбрать игру из списка
+    - Нажать кнопку Create battle
+  expected-result: |
+    Должна начатся игра между пользователем и ботом
+
+
+
+
+ - summary: |
+    Пользователь может создать игру с другим пользователем
+  requirement: |
+    Пользователь может сам создать игру, в которую можно играть с любым человеком, с ботом или другом (игра будет доступна по ссылке).
+  prerequisites:
+    Открыта главная страница Codebattle
+  test-data: |
+    Игрок 1 = Nata2023
+    Игрок 2 = другой пользователь, который первым примет вызов
+  steps:
+    - Нажать кнопку CREATE A GAME
+    - Нажать кнопку With other users
+    - Выбрать игру из списка Choose task by name or tags
+    - Нажать кнопку Create battle
+  expected-result: |
+    Игра переходит в режим ожидания соперника, который откликнется первым.
+
+
+
+
+
+ - summary: |
+    Пользователь может создать игру с другом через ссылку
+  requirement: |
+    Пользователь может сам создать игру, в которую можно играть с любым человеком, с ботом или другом (игра будет доступна по ссылке).
+  prerequisites:
+    Открыта главная страница Codebattle
+  test-data: |
+    Игрок 1 = Nata2023
+    Игрок 2 = друг, которому отправлена ссылка
+  steps:
+    - Нажать кнопку CREATE A GAME
+    - Нажать кнопку With a friend
+    - Выбрать игру из списка Choose task by name or tags
+    - Выбрать оппонента из списка Choose opponent
+    - Нажать кнопку Create invite
+  expected-result: |
+    Приглашение отправляется выбранному оппоненту и вверху в правом углу на знаке со скрещенными мечамя появляется цифра.
+
+
+
+
+
+ - summary: |
+    Успешная отмена игры с другом
+  requirement: |
+    Пользователь может отменить созданную игру с другом
+  prerequisites:
+    Игра с другом уже создана
+  test-data: |
+    Игрок 1 = Nata2023
+    Игрок 2 = tbb
+  steps:
+    - Нажать кнопку с изображением срещенных мечей в правом верхнем углу
+    - Нажать кнопку Cancel
+  expected-result: |
+    Слева внизу в чате появляется сообщение: You cancel battle invite

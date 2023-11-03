@@ -380,9 +380,9 @@
   steps:
     - Игроки пишут код
     - Игрок 1 решил сдаться и нажимает кнопку Giva Up с изображением флага, кнопка находится в середине монитора.
-    - Ознакамливаемся с сообщением: "Are you sure you want to give up?"
+    - Ознакамливаемся с сообщением "Are you sure you want to give up?"
     - Нажать кнопку Giva Up красного цвета
-    - Ознакомится с сообщением: "If you read this you've lost the game"
+    - Ознакомится с сообщением "If you read this you've lost the game"
     - Нажать I'll be back
     - Справа появляется сообщение:"Your opponent has won the game"
     - Нажать Back to Home

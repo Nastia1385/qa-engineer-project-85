@@ -762,7 +762,7 @@
   requirement: |
     Сайт должен быть доступен на различных устройствах
   prerequisites: |
-    Открыта главная страница Codebattle. Телефон держим вертикально. В Devtools открыта вкладка Networc Responsive.
+    Открыта главная страница Codebattle. Телефон держим горизонтально. В Devtools открыта вкладка Networc Responsive.
   test-data: |
     - Galaxy Note 20:landscape Android 11  width 412 height 915
     - Galaxy S10/S10+:landscape  Android 11  width 360 height 760

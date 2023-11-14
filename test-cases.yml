@@ -7,7 +7,7 @@
     Осуществлен вход на сайт https://codebattle.hexlet.io/
   test-data: |
     Nickname = Nata2023
-    Email = NatashaSOL@gmail.com
+    Email = берём новый мейл
     Password = Cjkywt2020@
     Password Confirmation = Cjkywt2020@
   steps:
@@ -433,7 +433,7 @@
     - Игрок 1 отменяет написанное дейстия, нажав кнопку "Reset editor"
     - Игрок 1 заново пишет код
   expected-result: |
-    Игрок видит, что весь ранее написанный им код удалем и можно писать код заново
+    Редактор кода сброшен, весь пользовательский код удален.
 
 
 

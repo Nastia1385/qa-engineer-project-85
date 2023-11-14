@@ -531,7 +531,7 @@
     Язык программирования = Node.js 16.17.0
     Задача = get_alphabet
   steps:
-    - Игрок 1 дописал код: const solution = (s) => {
+    - Игрок 1 дописал код const solution = (s) => {
                              _set = new Set([1,2,3])
                              return _set.size
                            };
@@ -555,7 +555,7 @@
     Язык программирования = Node.js 16.17.0
     Задача = get_alphabet
   steps:
-    - Игрок 1 дописал код: const solution = (s) => {
+    - Игрок 1 дописал код const solution = (s) => {
                              _set = new Set([1,2,3])
                              return _set.size
                            };
